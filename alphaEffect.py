@@ -1,9 +1,9 @@
 from matplotlib import pyplot as plt
+import numpy as np
 import json
 
 stage = 4
-fileName = "data12"
-
+fileName = "data4"
 
 
 # Import the data
@@ -27,7 +27,8 @@ nObsRequests = len(obsRequests)
 nPasses = len(satPasses)
 nGoals = len(goals)
 
-alphaVect = [0, 0.1, 0.25, 0.5, 0.75, 1.0]
+alphaVect = np.linspace(0, 1, 21)
+print(alphaVect)
 qualityVect = []
 costVect = []
 
