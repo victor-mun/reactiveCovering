@@ -3,7 +3,7 @@ import numpy as np
 import json
 
 stage = 4
-fileName = "data4"
+fileName = "data2"
 
 
 # Import the data
@@ -88,7 +88,7 @@ ax = fig.add_subplot(111)
 ax.plot(qualityVect, costVect)
 ax.set_xlabel('1-Quality')
 ax.set_ylabel('Cost')
-plt.title('')
+plt.title('Effect of the parameter alpha')
 plt.grid(True)
 
 plt.show()
